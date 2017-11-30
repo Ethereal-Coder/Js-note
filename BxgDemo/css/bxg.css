@@ -1,0 +1,184 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    height: 2000px;
+}
+
+ul {
+    list-style: none;
+}
+
+a {
+    cursor: pointer;
+}
+
+.header {
+    height: 30px;
+    background-color: #f7f7f7;
+}
+
+.header-in {
+    width: 1190px;
+    height: 30px;
+    margin: 0 auto;
+}
+
+.header-in p {
+    font-size: 12px;
+    line-height: 30px;
+    color: #999999;
+}
+
+.part_line {
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.header-in a {
+    text-decoration: none;
+    font: normal 12px "微软雅黑";
+    color: #444444;
+}
+
+.header-in a:hover {
+    color: #999999;
+}
+
+.logo {
+    background-color: cornflowerblue;
+    padding-top: 20px;
+    width: 1190px;
+    height: 75px;
+    margin: 0 auto;
+}
+
+.logo img {
+    float: left;
+}
+
+.logo ul, .logo li {
+    float: right;
+}
+
+.logo ul {
+    background-color: aqua;
+
+}
+
+.logo li {
+    height: 20px;
+    padding-left: 10px;
+}
+
+.logo li a {
+    display: block;
+    line-height: 20px;
+    text-decoration: none;
+    font: normal 14px "微软雅黑";
+    color: #444444;
+}
+
+.logo li em {
+    display: block;
+    line-height: 20px;
+    font-style: normal;
+    font: normal 12px "微软雅黑";
+    color: #999999;
+}
+
+.nav {
+    width: 1190px;
+    height: 40px;
+    margin: 0 auto;
+}
+
+.all_subject {
+    float: left;
+    width: 230px;
+    height: 40px;
+    line-height: 38px;
+    text-align: center;
+    background: #3492fd;
+    border-radius: 8px 8px 0px 0;
+    margin-top: 2px;
+}
+
+.all_subject a {
+    font-size: 16px;
+    color: #ffffff;
+    text-decoration: none;
+}
+
+.title {
+    float: left;
+    height: 40px;
+    line-height: 40px;
+}
+
+.title div{
+    margin-left: 20px;
+    float: left;
+}
+
+.ti_in{
+    float: left;
+    margin-left: 20px;
+    font-size: 16px;
+    color: #444444;
+    text-decoration: none;
+}
+
+.ti_n{
+    font-size: 16px;
+    color: #444444;
+    text-decoration: none;
+}
+
+.title span{
+    display: inline-block;
+    width: 0;
+    height: 0;
+    margin-left: 2px;
+    vertical-align: middle;
+    border-top: 4px dashed;
+    border-top: 4px solid \9;
+    border-right: 4px solid transparent;
+    border-left: 4px solid transparent;
+    color: #c2c2c2;
+}
+
+.search{
+    float: right;
+    width: 180px;
+    border: 1px solid #eeeeee;
+    border-radius: 20px;
+    padding: 6px 15px;
+    margin-top: -1px;
+}
+
+.search input{
+    border-right: 1px solid #eeeeee;
+    width: 132px;
+    outline: none;
+    background: none;
+    border-left: 0;
+    border-top: 0;
+    border-bottom: 0;
+    font-size: 14px;
+}
+
+.search_btn{
+    display: inline-block;
+    margin-left: 15px;
+    background: url(../images/search.png) center center;
+    width: 20px;
+    height: 20px;
+    outline: none;
+    border: none;
+    vertical-align: middle;
+    margin-top: -4px;
+}
+
