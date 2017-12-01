@@ -11,6 +11,8 @@ a {
     cursor: pointer;
 }
 
+/*<!--header begin-->*/
+/*<!--品牌开始-->*/
 .pinpai {
     background-color: #f7f7f7;
 }
@@ -42,6 +44,7 @@ a {
     color: #999999;
 }
 
+/*<!--logo begin-->*/
 .logo {
     padding-top: 20px;
     width: 1190px;
@@ -65,7 +68,7 @@ a {
 
 .logo li {
     height: 20px;
-    padding-left: 10px;
+    padding-left: 15px;
 }
 
 .logo li a {
@@ -84,6 +87,7 @@ a {
     color: #999999;
 }
 
+/*<!--导航，搜索 begin-->*/
 .nav {
     width: 1190px;
     height: 40px;
@@ -177,6 +181,14 @@ a {
     margin-top: -4px;
 }
 
+/*<!--header end-->*/
+
+/*<!--middle begin-->*/
+.middle {
+    background-color: #f7f7f7;
+}
+
+/*<!--banner begin-->*/
 .banner {
     width: 100%;
     height: 320px;
@@ -184,6 +196,7 @@ a {
     /*background-color: #3492fd;*/
 }
 
+/*<!--coupons begin-->*/
 .coupon_out {
     width: 1190px;
     margin: 0 auto;
@@ -191,14 +204,14 @@ a {
 
 .coupons {
     margin-top: 10px;
-    background-color: #444444;
+    background-color: #ffffff;
     float: right;
     width: 950px;
     height: 80px;
     border-radius: 8px 8px 8px 8px;
 }
 
-.coupons ul{
+.coupons ul {
     list-style: none;
 }
 
@@ -213,7 +226,7 @@ a {
     line-height: 78px;
     font-style: normal;
     font-size: 30px;
-    color: #999999;
+    color: #bbbbbb;
 }
 
 .coupons .coupons_in {
@@ -249,6 +262,7 @@ a {
     white-space: nowrap;
 }
 
+/*<!--course menu begin-->*/
 .slidebar {
     position: absolute;
     width: 230px;
@@ -258,7 +272,7 @@ a {
     border-radius: 0px 0px 8px 8px;
 }
 
-.slidebar ul{
+.slidebar ul {
     list-style: none;
 }
 
@@ -295,6 +309,7 @@ a {
     margin: 0 auto;
 }
 
+/*<!--精品课程 begin-->*/
 .hot {
     width: 1190px;
     margin: 0 auto;
@@ -306,7 +321,7 @@ a {
     float: left;
     width: 690px;
     height: 256px;
-    background-color: #eeeeee;
+    background-color: #ffffff;
     border-radius: 8px 8px 8px 8px;
 }
 
@@ -347,7 +362,7 @@ a {
     width: 290px;
     height: 190px;
     border-radius: 6px;
-    border: solid 1px #999999;
+    border: solid 1px #eeeeee;
 }
 
 .public_r_1 {
@@ -356,10 +371,11 @@ a {
     width: 290px;
     height: 190px;
     border-radius: 6px;
-    border: solid 1px #999999;
+    border: solid 1px #eeeeee;
 }
 
 .public_top {
+    border-radius: 6px 6px 0px 0px;
     background-image: url(../images/pub.png);
     width: 290px;
     height: 120px;
@@ -417,114 +433,298 @@ a {
     float: right;
     width: 490px;
     height: 256px;
-    background-color: #eeeeee;;
+    background-color: #ffffff;;
     border-radius: 8px 8px 8px 8px;
 }
 
-.news_left{
+.news_left {
     margin-top: 20px;
     margin-left: 45px;
     float: left;
     width: 122px;
 }
 
-.news_left span{
+.news_left span {
     font-size: 16px;
     font-family: "Microsoft YaHei UI";
     font-style: normal;
     color: #444444;
 }
 
-.news_left img{
+.news_left img {
     margin-top: 10px;
 }
 
-.news_right{
+.news_right {
     margin-top: 20px;
     margin-right: 40px;
     float: right;
     width: 230px;
 }
 
-.zx{
+.zx {
     font-size: 14px;
     color: #3492fd;
 }
 
-.news_right ul{
+.news_right ul {
     margin-top: 10px;
-
 }
 
-.news_right li a{
+.news_right li a {
     display: block;
     height: 30px;
     line-height: 30px;
     font: normal 14px "Microsoft YaHei UI";
 }
 
-.special_out{
-    border: solid 1px #279930;
+/*<!--热门微课 begin-->*/
+
+.special_out {
+    border: solid 1px #f7f7f7;
     width: 1190px;
     height: 340px;
-    margin: 500px auto 0px auto;
+    margin: 400px auto 0px auto;
 }
 
-.special_out ul{
+.special_out ul {
     overflow: hidden;
     list-style: none;
 }
-.special_out ul a{
+
+.special_out ul a {
     margin: 0 10px;
     float: left;
     display: block;
-    height: 20px;
-    line-height: 20px;
+    height: 30px;
+    line-height: 30px;
     text-decoration: none;
-    color: #444444;
+    color: #999999;
     font-size: 14px;
 }
 
-.sc_1{
-    border: solid 1px #999999;
-    border-radius: 8px;
+.special_out .st {
+    color: #444444;
+    font-size: 18px;
+}
+
+.special_course {
     width: 290px;
-    height: 300px;
+    height: 280px;
+    border-radius: 8px;
+    background-color: #ffffff;
+}
+
+.sc_1 {
     float: left;
     margin-right: 10px;
 }
 
-.sc_2{
+.sc_2 {
     float: left;
-    width: 290px;
-    height: 300px;
 }
-.sc_3{
+
+.sc_3 {
     margin-left: 10px;
     float: right;
-    width: 290px;
-    height: 300px;
 }
-.sc_4{
+
+.sc_4 {
     float: right;
-    width: 290px;
-    height: 300px;
 }
 
-.special{
-
-}
-
-.course_top{
+.course_top {
     width: 290px;
     height: 180px;
-    background-image: url(../images/wk.jpg);
 }
 
-.course_bottom{
-    width: 290px;
-    height: 120px;
+.course_top img {
+    width: 100%;
+    height: 100%;
+    border-radius: 8px 8px 0px 0px;
 }
+
+.course_bottom {
+    width: 290px;
+    height: 100px;
+}
+
+.course_name {
+    display: block;
+    height: 30px;
+    line-height: 30px;
+    font-size: 16px;
+    color: #444444;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    margin-left: 20px;
+    margin-right: 20px;
+    margin-top: 15px;
+}
+
+.course_desc {
+    margin-left: 10px;
+    color: #999999;
+    font-size: 12px;
+}
+
+.course_desc i {
+    font-style: normal;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+.course_price {
+    height: 30px;
+    line-height: 30px;
+    display: block;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+.course_price i, .course_price span {
+    height: 30px;
+    line-height: 30px;
+    font-size: 16px;
+    color: red;
+    font-style: normal;
+}
+
+.course_price del, .course_price del i {
+    height: 30px;
+    line-height: 30px;
+    font-size: 12px;
+    color: #999999;
+    font-style: normal;
+}
+
+.course_price .scan_count span {
+    height: 30px;
+    line-height: 30px;
+    font-size: 12px;
+    color: #999999;
+    font-style: normal;
+}
+
+.scan_count img {
+    margin: auto 0;
+}
+
+.scan_count {
+    float: right;
+}
+
+/*<!--middle end-->*/
+
+/*<!--footer begin-->*/
+.footer {
+    background: #274553;
+}
+
+.hr {
+    height: 1px;
+    background-color: #666666;
+}
+
+/*<!--友情链接 begin-->*/
+.footer1 {
+    overflow: hidden;
+    width: 1190px;
+    height: 152px;
+    margin: 13px auto;
+}
+
+.introduce {
+    margin-top: 20px;
+    float: left;
+    width: 430px;
+}
+
+.footer_title {
+    font-size: 18px;
+    color: #ffffff;
+}
+
+.introduction {
+    margin-top: 10px;
+    font-size: 14px;
+    line-height: 22px;
+    color: #ffffff;
+}
+
+.friend_link {
+    margin-top: 20px;
+    float: right;
+    width: 515px;
+}
+
+.follow {
+    margin-top: 20px;
+    float: left;
+    margin-left: 50px;
+    width: 120px;
+}
+
+.icon {
+    width: 120px;
+    margin-top: 15px;
+}
+
+.weibo {
+    float: left;
+}
+
+.weixin {
+    float: right;
+}
+
+.friend a {
+    margin-top: 8px;
+    color: #ffffff;
+    margin-right: 30px;
+    float: left;
+    font-size: 14px;
+    height: 26px;
+    line-height: 26px;
+}
+
+/*<!--版权声明 begin-->*/
+.footer2 {
+    padding-bottom: 30px;
+}
+
+.footer2 ul {
+    width: 300px;
+    list-style: none;
+    overflow: hidden;
+    margin: 10px auto;
+}
+
+.footer2 ul li {
+    float: left;
+}
+
+.footer2 ul a {
+    margin: 0 10px;
+    font-size: 12px;
+    color: #ffffff;
+}
+
+.footer2 ul em {
+    font-style: normal;
+    font-size: 12px;
+    color: #666666;
+}
+
+.footer2 p {
+    width: 100%;
+    text-align: center;
+    font-size: 12px;
+    color: #ffffff;
+}
+
+/*<!-- footer end-- >*/
 
 
 
