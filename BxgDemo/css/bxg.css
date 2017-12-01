@@ -7,16 +7,11 @@ body {
     height: 2000px;
 }
 
-ul {
-    list-style: none;
-}
-
 a {
     cursor: pointer;
 }
 
-.header {
-    height: 30px;
+.pinpai {
     background-color: #f7f7f7;
 }
 
@@ -48,10 +43,9 @@ a {
 }
 
 .logo {
-    background-color: cornflowerblue;
     padding-top: 20px;
     width: 1190px;
-    height: 75px;
+    height: 58px;
     margin: 0 auto;
 }
 
@@ -64,7 +58,8 @@ a {
 }
 
 .logo ul {
-    background-color: aqua;
+    list-style: none;
+    margin-top: 10px;
 
 }
 
@@ -118,12 +113,12 @@ a {
     line-height: 40px;
 }
 
-.title div{
+.title div {
     margin-left: 20px;
     float: left;
 }
 
-.ti_in{
+.ti_in {
     float: left;
     margin-left: 20px;
     font-size: 16px;
@@ -131,13 +126,13 @@ a {
     text-decoration: none;
 }
 
-.ti_n{
+.ti_n {
     font-size: 16px;
     color: #444444;
     text-decoration: none;
 }
 
-.title span{
+.title span {
     display: inline-block;
     width: 0;
     height: 0;
@@ -150,7 +145,7 @@ a {
     color: #c2c2c2;
 }
 
-.search{
+.search {
     float: right;
     width: 180px;
     border: 1px solid #eeeeee;
@@ -159,7 +154,7 @@ a {
     margin-top: -1px;
 }
 
-.search input{
+.search input {
     border-right: 1px solid #eeeeee;
     width: 132px;
     outline: none;
@@ -170,7 +165,7 @@ a {
     font-size: 14px;
 }
 
-.search_btn{
+.search_btn {
     display: inline-block;
     margin-left: 15px;
     background: url(../images/search.png) center center;
@@ -181,4 +176,358 @@ a {
     vertical-align: middle;
     margin-top: -4px;
 }
+
+.banner {
+    width: 100%;
+    height: 320px;
+    background-image: url(../images/web.jpg);
+    /*background-color: #3492fd;*/
+}
+
+.coupon_out {
+    width: 1190px;
+    margin: 0 auto;
+}
+
+.coupons {
+    margin-top: 10px;
+    background-color: #444444;
+    float: right;
+    width: 950px;
+    height: 80px;
+    border-radius: 8px 8px 8px 8px;
+}
+
+.coupons ul{
+    list-style: none;
+}
+
+.coupons li {
+    float: right;
+    height: 78px;
+}
+
+.coupons li em {
+    height: 78px;
+    margin: auto 0px;
+    line-height: 78px;
+    font-style: normal;
+    font-size: 30px;
+    color: #999999;
+}
+
+.coupons .coupons_in {
+    padding: 16px;
+    overflow: hidden;
+}
+
+.coupons_img {
+    float: left;
+    width: 44px;
+    height: 44px;
+    margin-right: 5px;
+    background-image: url(../images/infos.png);
+}
+
+.coupons_m {
+    float: left;
+}
+
+.coupons_desc span {
+    display: block;
+    width: 150px;
+    font-size: 12px;
+    color: #999999;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+.coupons_price span {
+    font-size: 16px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+.slidebar {
+    position: absolute;
+    width: 230px;
+    height: 410px;
+    line-height: 40px;
+    background: #99999999;
+    border-radius: 0px 0px 8px 8px;
+}
+
+.slidebar ul{
+    list-style: none;
+}
+
+.slidebar li a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 14px;
+    padding: 0 30px;
+    display: block;
+    line-height: 40px;
+}
+
+.slidebar li a:hover {
+    color: #00a4ff;
+}
+
+.slidebar a span {
+    margin-right: 30px;
+    float: right;
+}
+
+.middle {
+    position: relative;
+}
+
+.slide {
+    width: 100%;
+    position: absolute;
+    top: 0px;
+}
+
+.sli {
+    width: 1190px;
+    margin: 0 auto;
+}
+
+.hot {
+    width: 1190px;
+    margin: 0 auto;
+}
+
+.public {
+    margin-top: 30px;
+    margin-bottom: 30px;
+    float: left;
+    width: 690px;
+    height: 256px;
+    background-color: #eeeeee;
+    border-radius: 8px 8px 8px 8px;
+}
+
+.public span {
+    display: block;
+    margin-top: 20px;
+    margin-left: 50px;
+    font-size: 18px;
+}
+
+.public_1 {
+    height: 207px;
+    margin-top: 10px;
+    position: relative;
+}
+
+.public_left {
+    background-image: url(../images/left.png);
+    position: absolute;
+    top: 50px;
+    left: 0px;
+    width: 30px;
+    height: 60px;
+}
+
+.public_right {
+    background-image: url(../images/right.png);
+    position: absolute;
+    top: 50px;
+    right: 0px;
+    width: 30px;
+    height: 60px;
+}
+
+.public_l_1 {
+    float: left;
+    margin-left: 48px;
+    width: 290px;
+    height: 190px;
+    border-radius: 6px;
+    border: solid 1px #999999;
+}
+
+.public_r_1 {
+    margin-right: 48px;
+    float: right;
+    width: 290px;
+    height: 190px;
+    border-radius: 6px;
+    border: solid 1px #999999;
+}
+
+.public_top {
+    background-image: url(../images/pub.png);
+    width: 290px;
+    height: 120px;
+}
+
+.public_bottom {
+    width: 290px;
+    height: 70px;
+}
+
+.public_bottom a {
+    margin-left: 10px;
+    margin-right: 10px;
+    line-height: 35px;
+    font-size: 12px;
+    text-decoration: none;
+    color: #999999;
+}
+
+.public_bottom .public_span1 {
+    font-size: 14px;
+    color: #444444;
+    float: left;
+}
+
+.public_span2 {
+    float: right;
+
+}
+
+.public_span3 {
+    float: left;
+
+}
+
+.public_span4 {
+    float: right;
+}
+
+.public_bottom div {
+    height: 35px;
+    display: block;
+}
+
+.public_bottom img {
+    margin-top: 10px;
+    float: right;
+    width: 14px;
+    height: 14px;
+}
+
+.news {
+    margin-top: 30px;
+    margin-bottom: 30px;
+    float: right;
+    width: 490px;
+    height: 256px;
+    background-color: #eeeeee;;
+    border-radius: 8px 8px 8px 8px;
+}
+
+.news_left{
+    margin-top: 20px;
+    margin-left: 45px;
+    float: left;
+    width: 122px;
+}
+
+.news_left span{
+    font-size: 16px;
+    font-family: "Microsoft YaHei UI";
+    font-style: normal;
+    color: #444444;
+}
+
+.news_left img{
+    margin-top: 10px;
+}
+
+.news_right{
+    margin-top: 20px;
+    margin-right: 40px;
+    float: right;
+    width: 230px;
+}
+
+.zx{
+    font-size: 14px;
+    color: #3492fd;
+}
+
+.news_right ul{
+    margin-top: 10px;
+
+}
+
+.news_right li a{
+    display: block;
+    height: 30px;
+    line-height: 30px;
+    font: normal 14px "Microsoft YaHei UI";
+}
+
+.special_out{
+    border: solid 1px #279930;
+    width: 1190px;
+    height: 340px;
+    margin: 500px auto 0px auto;
+}
+
+.special_out ul{
+    overflow: hidden;
+    list-style: none;
+}
+.special_out ul a{
+    margin: 0 10px;
+    float: left;
+    display: block;
+    height: 20px;
+    line-height: 20px;
+    text-decoration: none;
+    color: #444444;
+    font-size: 14px;
+}
+
+.sc_1{
+    border: solid 1px #999999;
+    border-radius: 8px;
+    width: 290px;
+    height: 300px;
+    float: left;
+    margin-right: 10px;
+}
+
+.sc_2{
+    float: left;
+    width: 290px;
+    height: 300px;
+}
+.sc_3{
+    margin-left: 10px;
+    float: right;
+    width: 290px;
+    height: 300px;
+}
+.sc_4{
+    float: right;
+    width: 290px;
+    height: 300px;
+}
+
+.special{
+
+}
+
+.course_top{
+    width: 290px;
+    height: 180px;
+    background-image: url(../images/wk.jpg);
+}
+
+.course_bottom{
+    width: 290px;
+    height: 120px;
+}
+
+
+
+
+
 
