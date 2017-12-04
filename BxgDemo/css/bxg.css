@@ -185,6 +185,9 @@ a {
 
 /*<!--middle begin-->*/
 .middle {
+    overflow: hidden;
+    width: 100%;
+    position: relative;
     background-color: #f7f7f7;
 }
 
@@ -295,10 +298,6 @@ a {
     float: right;
 }
 
-.middle {
-    position: relative;
-}
-
 .slide {
     width: 100%;
     position: absolute;
@@ -312,6 +311,7 @@ a {
 
 /*<!--精品课程 begin-->*/
 .hot {
+    overflow: hidden;
     width: 1190px;
     margin: 0 auto;
 }
@@ -497,7 +497,7 @@ a {
     border: solid 1px #f7f7f7;
     width: 1190px;
     height: 340px;
-    margin: 400px auto 0px auto;
+    margin: 0px auto 0px auto;
 }
 
 .special_out ul {
@@ -526,6 +526,10 @@ a {
     height: 280px;
     border-radius: 8px;
     background-color: #ffffff;
+}
+
+.special{
+    overflow: hidden;
 }
 
 .sc_1 {
