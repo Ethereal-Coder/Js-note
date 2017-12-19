@@ -6,25 +6,160 @@
     <title>阶段2作业1</title>
     <style type="text/css">
         /* 样式层 */
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        .wrap {
+            width: 670px;
+            margin: 30px auto;
+            background-color: #ececec;
+        }
+
+        .wrap-head {
+            width: 670px;
+            height: 60px;
+        }
+
+        .wrap-head input[type=button] {
+            width: 100px;
+            height: 30px;
+            margin: 15px 3px;
+            border: solid 1px #f2fd41;
+            border-radius: 5px;
+            color: #000000;
+            background-color: #ffffff;
+            outline: none;
+            cursor: pointer;
+        }
+
+        .random-div {
+            width: 670px;
+            margin: 5px auto;
+            line-height: 60px;
+            height: 60px;
+            background-color: crimson;
+            text-align: center;
+            font-size: 30px;
+            color: #ffffff;
+        }
     </style>
 </head>
 
 <body>
-    <!-- 结构层 -->
-    <div class="wrap">
-        <div class="wrap-head">
-            <input type="button" id="add" value="添加" />
-            <input type="button" id="delete" value="删除" />
-            <input type="button" id="less" value="小于0" />
-            <input type="button" id="bigger" value="大于0" />
-            <input type="button" id="ref" value="刷新" />
-            <input type="button" id="clear" value="清除" />
-        </div>
-        <div class="wrap-main"></div>
+<!-- 结构层 -->
+<div class="wrap">
+    <div class="wrap-head">
+        <input type="button" id="add" value="添加"/>
+        <input type="button" id="delete" value="删除"/>
+        <input type="button" id="less" value="小于0"/>
+        <input type="button" id="bigger" value="大于0"/>
+        <input type="button" id="ref" value="刷新"/>
+        <input type="button" id="clear" value="清除"/>
     </div>
-    <!-- 交互层 -->
-    <script>
-    </script>
+    <div class="wrap-main"></div>
+</div>
+<!-- 交互层 -->
+<script>
+    var tags = document.getElementsByTagName("input");
+    var divMain = document.getElementsByClassName("wrap-main")[0];
+    var btnAdd = document.getElementById("add");
+    var btnDelete = document.getElementById("delete");
+    var btnLess = document.getElementById("less");
+    var btnBigger = document.getElementById("bigger");
+    var btnRef = document.getElementById("ref");
+    var btnClear = document.getElementById("clear");
+
+
+    function commenStyle(myElement) {
+        console.log(myElement.getAttribute("id"));
+        for (var i = 0; i < tags.length; i++) {
+            if (tags[i].getAttribute("id") === myElement.getAttribute("id")) {
+                myElement.style.color = "#ffffff";
+                myElement.style.borderColor = "#fd6363"
+                myElement.style.borderWidth = 2 + "px";
+                myElement.style.backgroundColor = "#00a4ff";
+            } else {
+                tags[i].style.color = "#000000";
+                tags[i].style.borderColor = "#f2fd41"
+                tags[i].style.borderWidth = 1 + "px";
+                tags[i].style.backgroundColor = "#ffffff";
+            }
+        }
+    }
+
+    btnAdd.onclick = function (ev) {
+        // this.style.color = "#ffffff";
+        // this.style.borderColor = "#fd6363"
+        // this.style.borderWidth = 2+"px";
+        // this.style.backgroundColor = "#00a4ff"
+        commenStyle(this);
+        divMain.appendChild(getRandomElement());
+
+    }
+    btnDelete.onclick = function (ev) {
+        commenStyle(this);
+        // var rDivs = document.getElementsByClassName(".random-div");
+        var rDivs = document.querySelectorAll(".random-div");
+        if (rDivs.length > 0) {
+            divMain.removeChild(rDivs[rDivs.length - 1]);
+        } else {
+            alert("已经删除了所有新创建元素..")
+        }
+    }
+    btnLess.onclick = function (ev) {
+        commenStyle(this);
+        var rDivs = document.querySelectorAll(".random-div");
+        for (var j = 0; j < rDivs.length; j++) {
+            if (parseInt(rDivs[j].innerHTML) > 0) {
+                divMain.removeChild(rDivs[j]);
+            }
+        }
+    }
+    btnBigger.onclick = function (ev) {
+        commenStyle(this);
+        var rDivs = document.querySelectorAll(".random-div");
+        for (var j = 0; j < rDivs.length; j++) {
+            if (parseInt(rDivs[j].innerHTML) < 0) {
+                divMain.removeChild(rDivs[j]);
+            }
+        }
+    }
+    btnRef.onclick = function (ev) {
+        commenStyle(this);
+        var rDivs = document.querySelectorAll(".random-div");
+        for (var j = 0; j < rDivs.length; j++) {
+            rDivs[j].innerText = getRandomIntInclusive(-50, 50);
+        }
+    }
+    btnClear.onclick = function (ev) {
+        commenStyle(this);
+        var rDivs = document.querySelectorAll(".random-div");
+        for (var j = 0; j < rDivs.length; j++) {
+            divMain.removeChild(rDivs[j]);
+        }
+        btnAdd.onclick = null;
+        btnDelete.onclick = null;
+        btnLess.onclick = null;
+        btnBigger.onclick = null;
+        btnRef.onclick = null;
+    }
+
+    function getRandomElement() {
+        var re = document.createElement("div");
+        re.setAttribute("class", "random-div");
+        re.innerText = getRandomIntInclusive(-50, 50);
+        return re;
+    }
+
+    function getRandomIntInclusive(min, max) {
+        min = Math.ceil(min);
+        max = Math.floor(max);
+        return Math.floor(Math.random() * (max - min + 1)) + min;
+    }
+
+</script>
 </body>
 
 </html>
