@@ -166,8 +166,8 @@ label[for='toggle-all'] {
 }
 
 .todo-list li.editing .view {
-    display: none;
-}
+     display: none;
+ }
 
 .todo-list li .toggle {
     text-align: center;
