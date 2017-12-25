@@ -1,0 +1,1 @@
+GLOBAL_isLogin=0
