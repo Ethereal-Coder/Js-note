@@ -1,5 +1,0 @@
-requests
-pyqrcode
-pypng
-Pillow
-Kazoo
